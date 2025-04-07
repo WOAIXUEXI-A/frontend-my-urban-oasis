@@ -2,7 +2,7 @@
   <div class="bottom-box">
     <div class="info-container">
       <div class="info-section">
-        <h2>Urban Oasis</h2>
+        <h3>Urban Oasis</h3>
         <p class="info-text">Making Kuala Lumpur greener,</p>
         <p class="info-text">one step at a time.</p>
       </div>
@@ -35,6 +35,7 @@
 .info-container {
   display: flex;
   justify-content: flex-start;
+  align-items: flex-end;
   width: 100%;
 }
 
