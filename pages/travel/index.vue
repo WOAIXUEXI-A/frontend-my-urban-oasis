@@ -156,7 +156,8 @@
   // function to geocode the locations entered by the user
   async function geocodeLocation(location) {
     const encodedLocation = encodeURIComponent(location);
-    const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodedLocation}&key=AIzaSyBbzovkS8i4FHP8f9sy8tlMptGFrcK9-3U`);
+    const apiKey = process.env.NUXT_GOOGLE_MAPS_API_KEY;
+    const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodedLocation}&key=${apiKey}`);
     const data = await response.json();
 
     if (data.status === 'OK' && data.results.length > 0) {
