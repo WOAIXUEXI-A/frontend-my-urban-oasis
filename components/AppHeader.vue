@@ -2,21 +2,20 @@
   <div class="header-box">
     <div class="header">
       <div class="header-left">
-
-        <div class="header-logo-box">
-          <nuxt-link to="/" class="header-logo-link">
-            <img src="/logo.png" alt="Logo" class="header-logo-img">
-            <h1 class="header-logo-title">My Urban Oasis</h1>
-          </nuxt-link>
-        </div>
-
+        
+        <nuxt-link to="/" class="header-logo-link">
+          <img src="/logo.png" alt="Logo" class="header-logo">
+          <h1 class="header-title">My Urban Oasis</h1>
+        </nuxt-link>
+        
       </div>
       <div class="header-right">
-        <nuxt-link to="/map">Map</nuxt-link>
-        <nuxt-link to="/travel">Low-cargon Travel</nuxt-link>
-        <nuxt-link to="/activities">Activities</nuxt-link>
-        <nuxt-link to="/challenges">Challenges</nuxt-link>
-        <nuxt-link to="/insights">Insights</nuxt-link>
+        <nuxt-link to="/">Home</nuxt-link>
+        <nuxt-link to="/Map">Map</nuxt-link>
+        <nuxt-link to="/Travel">Low-carbon Travel</nuxt-link>
+        <nuxt-link to="/Activities">Activities</nuxt-link>
+        <nuxt-link to="/Challenges">Challenges</nuxt-link>
+        <nuxt-link to="/Insights">Insights</nuxt-link>
       </div>
     </div>
   </div>
@@ -34,32 +33,28 @@
   max-width: 98%;
   margin: 0 auto;
   height: 100%;
-  overflow: hidden;
 }
 
 .header-logo-link {
   display: flex;
+  align-items: center;
   text-decoration: none;
 }
 
 .header-left {
   display: flex;
+  align-items: center;
 }
 
-.header-logo-box {
+.header-logo {
   height: 44px;
 }
 
-.header-logo-img {
-  height: 44px;
-}
-
-.header-logo-title {
+.header-title {
   color: #059669;
   font-size: 18px;
   font-weight: bold;
-  line-height: 60px;
-  vertical-align: bottom;
+  margin: 0;
 }
 
 .header-right {
